@@ -1,7 +1,7 @@
 import math
 import warnings
 import numpy as np
-from image_processing_error import BoundaryError
+from src.image_processing_error import BoundaryError
 
 
 class BoundaryOperations:

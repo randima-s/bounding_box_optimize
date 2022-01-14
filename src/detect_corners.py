@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
-from image_processing_error import CornerDetectError
-from boundary_operations import BoundaryOperations
-from constants import ImageProcessingConsts
+from src.image_processing_error import CornerDetectError
+from src.boundary_operations import BoundaryOperations
+from src.constants import ImageProcessingConsts
 
 
 class DetectCorners:
@@ -71,6 +71,6 @@ class DetectCorners:
 
 
 if __name__ == "__main__":
-    img_path = "data/img4.jpg"
+    img_path = "../data/img1.jpg"
     corner_detector = DetectCorners(img_path)
     corner_detector.detect_plate_corners()
